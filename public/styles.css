@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+
+  padding: 0 16px;
+}
+
+.heading {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: #f5ba13;
+  font-size: 1.5rem;
+  width: 450px;
+  margin-left: 33%;
+}
+
+/* Style the label for grouping and sorting */
+.options label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Style the select element */
+.options select {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add a hover effect to the select element */
+.options select:hover {
+  border-color: #333;
+}
+
+.user-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Style the user column */
+.user-column {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%; /* Each user column takes equal width */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Style the user column header */
+.user-column h2 {
+  font-size: 16px;
+  margin: 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Style the individual tickets (cards) */
+.ticket {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Style ticket details */
+.ticket h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.ticket p {
+  font-size: 14px;
+  margin: 5px 0;
+}
